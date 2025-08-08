@@ -31,9 +31,6 @@ function loadIdeas() {
     const ideasList = document.getElementById('ideas-list');
     const ideas = [
         { Name: 'Sheshnath', title: 'Online Grocery Store', description: 'An e-commerce platform for local grocery delivery.' },
-        { Name: 'Prince', title: 'Digital Marketing Agency', description: 'Helping businesses grow their online presence.' },
-        { Name: 'Nitin', title: 'Mobile App Development', description: 'Creating custom mobile applications for various industries.' },
-        { Name: 'Nitish', title: 'E-learning Platform', description: 'An online platform for courses and tutorials.' },
     ];
 
     ideasList.innerHTML = '';
@@ -176,3 +173,4 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${3307}`);
 });
+
