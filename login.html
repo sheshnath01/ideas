@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="loginn.html" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+            <button type="submit" class="login-button">Login</button>
+               <script>
+                document.querySelector('form').addEventListener('submit', function(e) {
+                    // Remove the next line if you want to actually submit to save.php
+                    e.preventDefault();
+                    window.location.href = 'index.html';
+                });
+            </script>
+        </form>
+        <div class="footer">
+            <p>Don't have an account? <a href="reg.html">Register</a></p>
+            
+        </div>
+    </div>
+</body>
+</html>
